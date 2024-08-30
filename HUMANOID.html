@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootrap.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md" style="background-color: rgba(red, green, blue, alpha);">
+ 
+  
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI8Brwl6douXIgHtmOME4328M4fwPPcjvhSg&s" alt="..." width="60" class="me-2" >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">about</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+     <li class="nav-item-activate">
+      <a class="nav-link" href="WAFIQ.html">Sign up<span class="sr-only"></span></a>
+     </li>
+      </ul>
+ </nav>
+
+
+
+ <style>
+   body{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8RjRF2W-lHlr2R_HqMbOje1ag-bGNBC0NCA&s') ;
+ background-position:center center ;
+ background-size: cover;
+ background-attachment: fixed;  
+ height: 100%;
+  }
+ </style>  
+
+
+ <div class="mx-auto rounded text-white"
+ style="background-color: rgba(red, green, blue, alpha); height: 390px; width:370px ; margin:60px ;">
+   <h3 class="px-3 pt-3">Sign In</h3>
+   <hr>
+   <form class="px-3 py-1">
+    <div class="input-group mb-3">
+      <span class="input-text bg-warning border border-warning" style="width:50px ;">
+        <i class="fas fa-user"></i>
+      </span>
+      <input type="text" class="form-control" placeholder="username" name="username" id="username" required>
+      <div class="invalid-feedback">
+        please select a password
+      </div>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-text bg-warning border border-warning" style="width:50px ;">
+          <i class="fas fa-user"></i>
+        </span>
+        <input type="password" class="form-control" placeholder="password" name="password" id="password" required>
+        <div class="invalid-feedback">
+          please select a password
+        </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input"  type="checkbox" value="" id="FlexCheckDefault" name="remember">
+<label  class="form-chech-label" for="FlexCheckDefault">Rememeber me</label>
+        </div>
+        <div class=" d-flex justify-contenet-end">
+          <button type="submit" class="btn btn-primary">Submit</button>
+            
+         </div>
+      </div>
+   </form>
+ </div>
+ <hr>
+ <div class="text-center" style="color: white ;">
+  Dont have an account?<a href="WAFIQ.html" class="text-docoration-none" style="color: white;">Register</a><br>
+  <a href="" class="text-docoration-none" style="color:white ;">Forgot your password?</a>
+ </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+</script>
+</html>
